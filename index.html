@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frosted by Ciara</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Dancing+Script:wght@700&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div class="nav-logo">Frosted by Ciara</div>
+      <ul class="nav-links">
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#order">Order</a></li>
+        <li><a href="https://www.instagram.com/frostedbyciara" target="_blank">Instagram</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-tagline">handcrafted with love</p>
+        <h1 class="hero-title">Frosted by Ciara</h1>
+        <p class="hero-subtitle">Custom cakes, cookies & treats baked fresh for your sweetest moments.</p>
+        <a href="#order" class="btn">Place an Order</a>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-subtitle">Everything is made to order, baked fresh just for you.</p>
+      <div class="menu-grid">
+
+        <div class="menu-card">
+          <h3>Custom Cakes</h3>
+          <p>Beautifully designed layer cakes for birthdays, weddings, and every celebration in between.</p>
+          <span class="price">Starting at $45</span>
+        </div>
+
+        <div class="menu-card">
+          <h3>Cookies</h3>
+          <p>Royal icing sugar cookies in any shape or theme — perfect for parties and gifts.</p>
+          <span class="price">Starting at $12 / dozen</span>
+        </div>
+
+        <div class="menu-card">
+          <h3>Cupcakes</h3>
+          <p>Moist, fluffy cupcakes topped with swirls of homemade buttercream frosting.</p>
+          <span class="price">Starting at $22 / dozen</span>
+        </div>
+
+        <div class="menu-card">
+          <h3>Specialty Desserts</h3>
+          <p>Brownies, cake pops, dessert boards, and seasonal treats. Ask about custom orders!</p>
+          <span class="price">Prices vary</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="gallery" id="gallery">
+      <h2 class="section-title">Sweet Creations</h2>
+      <p class="section-subtitle">A peek at some of our favorite bakes.</p>
+      <div class="gallery-grid">
+       <div class="gallery-item"><img src="images/IMG_4489.JPG" alt="Frosted by Ciara baked goods" /></div>
+        <div class="gallery-item"><img src="images/IMG_5154.jpg" alt="Frosted by Ciara baked goods" /></div>
+        <div class="gallery-item"><img src="images/IMG_5155.jpg" alt="Frosted by Ciara baked goods" /></div>
+        <div class="gallery-item"><img src="images/IMG_5156.jpg" alt="Frosted by Ciara baked goods" /></div>
+        <div class="gallery-item"><img src="images/IMG_5157.jpg" alt="Frosted by Ciara baked goods" /></div>
+        <div class="gallery-item"><img src="images/View recent photos.PNG" alt="Frosted by Ciara baked goods" /></div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="images/IMG_5158.jpg" alt="Ciara, baker and founder of Frosted by Ciara" />
+        </div>
+        <div class="about-text">
+          <h2>Hi, I'm Ciara</h2>
+          <p>I'm a self-taught baker with a passion for turning simple ingredients into unforgettable moments. Every treat I make is baked from scratch with love, care, and the finest ingredients.</p>
+          <p>Whether it's a birthday cake, a bridal shower dessert table, or just a box of cookies to brighten someone's day — I would love to bake something special for you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER FORM -->
+    <section class="order" id="order">
+      <h2 class="section-title">Place an Order</h2>
+      <p class="section-subtitle">Fill out the form below and I will get back to you as soon as possible.</p>
+      <form class="order-form" action="https://formspree.io/f/mqeokwaa" method="POST" _next="thankyou.html">
+        <div class="form-row">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+</div>
+<input type="text" name="treat_type" placeholder="Type of Treat (e.g. Birthday Cake, Cookies)" required />
+<input type="text" name="event_date" placeholder="Event Date (if applicable)" />
+<textarea name="order_details" placeholder="Tell Ciara about your order — theme, flavors, quantity, and any special details." rows="5" required></textarea>
+        <button type="submit" class="btn">Send My Order Request</button>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p class="footer-logo">Frosted by Ciara</p>
+      <p>Made with love | &copy; 2026 Frosted by Ciara. All rights reserved.</p>
+      <p class="footer-legal">
+        All orders are subject to availability and confirmation. 
+        Your personal information is collected solely to process your order request and will never be shared with third parties.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
